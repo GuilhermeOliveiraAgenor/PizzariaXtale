@@ -1,0 +1,64 @@
+* { /*Aqui está a formatação principal que é para setar os valores padrões da página*/
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(Imagens/telafundo.jpg);
+    font-family: 'Quicksand', sans-serif;
+    background-image:  fixed;
+    background-size: 100%;
+    padding: 50px;
+}
+
+.h1 {
+    text-align: center;
+    padding: 50px;
+    zoom: 130%;
+}
+
+#customers { /* Aqui está a formatação da tabela por um todo */
+    border-collapse: collapse;
+    width: 95%;
+}
+
+#customers td, #customers th { /* Aqui está sendo formatado a lista de separação da tabela */
+    border: 2px solid yellow;
+    padding: 15px;
+  }
+
+#customers th { /* Aqui está a formatação da parte de cima da tabela */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    background-color: #000000;
+    color: yellow;
+}
+
+.botao { /* Aqui está a formatação do botão da tabela */
+    padding: 10px;
+    border-radius: 30px;
+    background-color: black;
+    color: yellow;
+    text-decoration: none;
+}
+
+.botao:hover {
+    color: black;
+    background-color: yellow;
+}
+
+.td {
+    text-align: center;
+    zoom: 160%;
+}
+
+.th {
+    zoom: 140%;
+}
+
+.material-icons {
+    background-image: url(Imagens/outline_home_black_48dp.png);
+	background-repeat: no-repeat;
+    padding: 50px;
+}

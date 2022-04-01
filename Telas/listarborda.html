@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!--Estrutura Básica Html-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!--Lá no Eclipse o meta está como "Iso-8859-2"-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="fatia-de-pizza.png"> <!--Icone da página-->
+    <link rel="Stylesheet" href="listar.css"> <!--Declaração do meu CSS-->
+    <title>Listar Borda</title>
+</head>
+<script>
+    function confirmar(Idborda){
+    var resposta = confirm("Você deseja realmente excluir ?");
+    if(resposta === true){
+        window.location.href = "excluirborda?Idborda=" + Idborda //alert(Cpf)
+    }
+    
+}
+</script>
+<body>
+    <div>
+        <a href="menu.html"><i class="material-icons"></i></a>
+        Voltar Para o Menu
+    </div>
+    <h1 class="h1">Listar Borda</h1>
+    <table id="customers">
+        <tr>
+            <th class="th"><b>Idborda</b></th>
+            <th class="th"><b>Nome</b></th>
+            <th class="th"><b>Preço</b></th>
+        </tr>
+        <tr>
+            <td class="td">TEXTO1</b></td>
+            <td class="td">TEXTO2</b></td>
+            <td class="td">TEXTO3</b></td>
+            <td><a class="botao">ALTERAR</a></td>
+            <td><a class="botao">EXCLUIR</a></td>
+        </tr>
+    </table>
+</body>
+</html>

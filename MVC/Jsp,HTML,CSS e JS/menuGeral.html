@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!--Lá no Eclipse o meta está como "Iso-8859-2"-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/fatia-de-pizza.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><!--Esse link é de um efeito que eu utilizei no menu-->
+    <script type="text/javascript" src="menu.js"></script>
+    <link rel="Stylesheet" href="menu.css">
+    <title>Menu</title>
+</head>
+<body>
+    <nav>
+        <ul id="ul-p"> <!--Aqui eu usei um identificador e declarei o meu ul principal-->
+            <li class="li-p">
+                <a href="javascript://" class="bt1">CADASTRAR</a>
+                <ul class="ul-cadastrar"> <!--Aqui eu criei uma classe para o ul secundário do submenu-->
+                    <li><a href="paginacadastroBorda">BORDA</a></li>
+                    <li><a href="paginacadastroProduto">PRODUTO</a></li>
+                    <li><a href="paginacadastroPizza">PIZZA</a></li>
+                    <li><a href="paginacadastrarIngredientes">INGREDIENTE</a></li>
+                    <li><a href="paginacadastrarCategoria">CATEGORIA</a></li>
+                </ul>
+            </li>
+            <li class="li-p">
+                <a href="javascript://" class="bt2">EDITAR</a>
+                <ul class="ul-editar"><!--Aqui eu criei uma classe para o ul secundário do submenu-->
+                    <li><a href="listarBorda">BORDA</a></li>
+                    <li><a href="listarProduto">PRODUTO</a></li>
+                    <li><a href="paginalterarPizza">PIZZA</a></li>
+                    <li><a href="listarIngredientes">INGREDIENTE</a></li>
+			        <li><a href="listarCategoria">CATEGORIA</a></li>
+                </ul>
+            </li>
+            <li class="li-p">
+                <a href="javascript://" class="bt3">RELATÒRIO</a>
+                <ul class="ul-relatorio"><!--Aqui eu criei uma classe para o ul secundário do submenu-->
+                    <li><a href="selecionarprodutosnoEmail">PRODUTO</a></li>
+                    <li><a href="selecionaringredientesnoEmail">INGREDIENTE</a></li>
+                </ul>
+            </li>
+            <li style="float:right"><a class="li-p" href="paginalterarDados">MEUS DADOS</a></li>
+        </ul>
+    </nav>
+    <h1 class="h1">Pizzaria Xtale</h1>
+    <footer class="footer">
+        <button><a class="botao" href = "paginalterarPizza">Alterar pizza</button></a>
+        <button><a class="botao" href ="listarProduto">Alterar produto</button></a>
+        <button><a class="botao" href = "listarIngredientes">Alterar ingrediente</button></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+    background-color: bisque;
+    font-family: sans-serif;
+    padding: 50px;
+}
+
+.formulario {
+    width: 400px;
+    margin: auto; /*Eu usaei a margin auto para o formulário ficar centralizado na página*/
+    padding-top: 40px;
+}
+
+.p1 {
+    box-shadow: 1px 1px 5px white;
+    background-color: white;
+    padding: 30px; /*Coloquei esse padding mais por ajuste mesmo*/
+    border-radius: 5px;
+}
+
+.p1-topo { /*Essa classe topo serve para a estilização dos elementos da parte de cima do meu formulário*/
+    text-align: center;
+}
+
+.p2-grupo{
+    margin-bottom: 75px; /* Usei essa opção para distanciar os itens dentro do meu formulário*/
+}
+
+.p2-grupo > label {
+    width: 100%; /*Usei essa largura para as labels se ajustarem dentro do meu formulário*/
+    color: black;
+    display: block; /* Usei esse display block para ajustar os campos de email e senha com as labels */
+}
+
+.p2-grupo > input {
+    border-radius: 5px; /*Para colocar uma pequena borda nas labels*/
+    outline: 0;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.p2-grupo > button { /*Declarei p2-grupo button para mexer no meu botão junto aos elementos do formulário*/
+    width: 100%; /*Usei essa largura para o botao se ajustar com as labels dentro do formulário*/
+    border-radius: 30px;
+    padding: 15px;
+    color: yellow;
+    border: 0px;
+    outline: 0;
+    background-color: black;
+}
+
+.btn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.icone {
+    border-radius: 50px;
+    width: 100px; /*Usei essa largura para o icone se alinhar ao formulário e ficar num tamanho ideal*/
+}
+
+.titulo {
+    color: black;
+}
+
+.h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 2px solid yellow;
+    padding: 15px;
+  }
+
+#customers th {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    background-color: #000000;
+    color: yellow;
+}
+
+.botao {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: yellow;
+}
+
+.botao:hover {
+    color: black;
+    background-color: yellow;
+}
+
+.estoque {
+    padding: 20px;
+    text-align: center;
+}
+
+.estoque > label {
+    padding: 5px;
+}
+
+.btn2 {
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+}
+
+.btn2:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.material-icons {
+    background-image: url(Imagens/outline_home_black_48dp.png);
+	background-repeat: no-repeat;
+    padding: 50px;
+}

@@ -1,0 +1,87 @@
+* { /*Aqui estÃ¡ a formataÃ§Ã£o principal que Ã© para setar os valores padrÃµes da pÃ¡gina*/
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 50px;
+    background-image: url(tela\ de\ fundo\ nova.jpg);
+    background-image:  fixed;
+    background-size: 100%;
+}
+
+.formulario { /* Aqui foi foi formatado o meu form */
+    width: 400px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.p1 { /* Aqui está a do formulário em si */
+    box-shadow: 1px 1px 5px gray;
+    background-color: white;
+    padding: 30px; /*Coloquei esse padding mais por ajuste mesmo*/
+    border-radius: 5px;
+}
+
+.p1-topo { /*Essa classe topo serve para a estilização dos elementos da parte de cima do meu formulário*/
+    text-align: center;
+}
+
+.p2-grupo{ /* Aqui está a formatação para distanciar as labels inputs e buttons */
+    margin-bottom: 75px; 
+}
+
+.p2-grupo > label {  /*Aqui está a formatação das labels do formulário */
+    width: 100%;
+    color: black;
+    display: block; /* Usei esse display block para ajustar os campos de email e senha com as labels */
+}
+
+.p2-grupo > input { /*Aqui está a formatação dos meus inputs */
+    border-radius: 5px;
+    outline: 0;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.p2-grupo > button { /*Aqui está a formatação do botão do formulário*/
+    width: 100%;
+    border-radius: 30px;
+    padding: 15px;
+    color: yellow;
+    border: 0px;
+    outline: 0;
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn:hover { /* Aqui está a formatação da tensição do botão */
+    background-color: yellow;
+    color: black;
+}
+
+.icone { /* Aqui está a formatação da imagem dentro do formulário */
+    border-radius: 50px;
+    width: 100px;
+}
+
+.titulo { /* Aqui está a formatação do título dentro do formulário */
+    color: black;
+}
+
+.material-icons { /*Aqui está a formatação do ícone home no canto superior esquerdo da página */
+    background-image: url(outline_home_black_48dp.png);
+	background-repeat: no-repeat;
+    padding: 50px;
+}
+
+#Unidadedemedida {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#Tamanhopizza {
+    font-family: 'Quicksand', sans-serif;
+}

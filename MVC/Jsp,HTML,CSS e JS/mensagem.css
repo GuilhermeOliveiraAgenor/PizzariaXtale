@@ -1,0 +1,39 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url(Imagens/telafundo.jpg);
+    background-image:  fixed;
+    background-size: 100%;
+}
+
+.h1 {
+    text-align: center;
+    padding: 100px;
+    font-family: 'Quicksand', sans-serif;
+   
+}
+
+.p {
+    text-align: center;
+    padding: 10px;
+	font-family: 'Quicksand', sans-serif;
+	
+}
+
+.btn {
+	font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: yellow;	
+}
+
+.btn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.material-icons {
+    background-image: url(Imagens/outline_home_black_48dp.png);
+	background-repeat: no-repeat;
+    padding: 50px;
+}

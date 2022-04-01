@@ -1,0 +1,104 @@
+* { /*Aqui está a formatação principal que é para setar os valores padrões da página*/
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 50px;
+    background-image: url(Imagens/telafundo.jpg);
+    background-image:  fixed;
+    background-size: 100%;
+}
+
+.formulario { /* Aqui foi foi formatado o meu form */
+    width: 400px;
+    margin: auto; /*Eu usaei a margin auto para o formulário ficar centralizado na página*/
+    padding-top: 40px;
+}
+
+.p1 { /* Aqui está a do formulário em si */
+    box-shadow: 1px 1px 5px gray;
+    background-color: white;
+    padding: 30px; /*Coloquei esse padding mais por ajuste mesmo*/
+}
+
+.p1-topo { /*Essa classe topo serve para a estilização dos elementos da parte de cima do meu formulário*/
+    text-align: center;
+}
+
+.p2-grupo{
+    margin-bottom: 75px; /* Usei essa opção para distanciar os itens dentro do meu formulário*/
+}
+
+.p2-grupo > label {
+    width: 100%; /*Usei essa largura para as labels se ajustarem dentro do meu formulário*/
+    color: black;
+    display: block; /* Usei esse display block para ajustar os campos de email e senha com as labels */
+}
+
+.p2-grupo > input { /*Aqui está a formatação dos meus inputs */
+    border-radius: 5px;
+    outline: 0;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.p2-grupo > button { /*Declarei p2-grupo button para mexer no meu botão junto aos elementos do formulário*/
+    width: 100%; 
+    border-radius: 30px;
+    padding: 15px;
+    color: yellow;
+    border: 0px;
+    outline: 0;
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn:hover { /* Aqui está a formatação da tensição do botão */
+    background-color: yellow;
+    color: black;
+}
+
+.icone { /* Aqui está a formatação da imagem dentro do formulário */
+    border-radius: 50px;
+    width: 100px; /*Usei essa largura para o icone se alinhar ao formulário e ficar num tamanho ideal*/
+}
+
+.titulo { /* Aqui está a formatação do título dentro do formulário */
+    color: black;
+}
+
+.estoque { /* Aqui está a formatação da label do estoque abaixo fo formulário */
+    padding: 20px;
+    text-align: center;
+}
+
+.estoque > label {
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#Numero2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn2 { /* Aqui está a formatação do botão do campo estoque abaixo do formulário */
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn2:hover { /*Aqui está a formatação da transição do botão do formulário*/
+    background-color: yellow;
+    color: black;
+}
+
+.material-icons { /*Aqui está a formatação do ícone home no canto superior esquerdo da página */
+    background-image: url(Imagens/outline_home_black_48dp.png);
+	background-repeat: no-repeat;
+    padding: 50px;
+}

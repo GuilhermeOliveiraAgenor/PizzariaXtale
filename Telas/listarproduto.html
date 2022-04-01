@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!--Estrutura Básica Html-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!--Lá no Eclipse o meta está como "Iso-8859-2"-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fatia-de-pizza.png"> <!--Icone da página-->
+    <link rel="Stylesheet" href="listar.css"> <!--Declaração do meu CSS-->
+    <title>Listar Produto</title>
+</head>
+<script>
+	function confirmar(Idproduto) {
+		var resposta = confirm("Você deseja realmente excluir ?");
+		if (resposta === true) {
+			window.location.href = "excluirproduto?Idproduto=" + Idproduto //alert(Cpf)
+		}
+
+}
+</script>
+<body>
+    <div>
+        <a href="menu.html"><i class="material-icons"></i></a>
+        Voltar Para o Menu
+    </div>
+    <h1 class="h1">Listar Produto</h1>
+    <table id="customers">
+        <tr>
+            <th class="th">Idproduto</th>
+            <th class="th">Nome</th>
+            <th class="th">Preço</th>
+            <th class="th">Categoria</th>
+            <th class="th">Estoque</th>
+        </tr>
+        <tr>
+            <td class="td">TEXTO1</td>
+            <td class="td">TEXTO2</td>
+            <td class="td">TEXTO3</td>
+            <td class="td">TEXTO4</td>
+            <td class="td">TEXTO5</td>
+            <td><a class="botao">ALTERAR</a></td>
+            <td><a class="botao">EXCLUIR</a></td>
+        </tr>
+    </table>
+</body>
+</html>

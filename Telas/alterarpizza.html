@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!--Estrutura Básica Html-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!--Lá no Eclipse o meta está como "Iso-8859-2"-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="shortcut icon" href="fatia-de-pizza.png"> <!--Icone da página-->
+    <link rel="Stylesheet" href="alterarlistar.css"> <!--Declaração do meu CSS-->
+    <title>Alterar Pizza</title>
+</head>
+<body onload = "campos()">
+    <script type="text/javascript">
+        function campos() {
+            var Idpizza = formulario.Idpizza.value;
+            if(Idpizza == "null") {
+                document.getElementById('Idpizza').readOnly =  true; 
+                document.getElementById('Idpizza').value=''; 
+                document.getElementById('Nome').value=''; 
+                document.getElementById('Preco').value=''; 
+                document.getElementById('Disponivel').value=''; 
+                document.getElementById('Tamanhopizza').value=''; 
+                document.getElementById('Nome').readOnly = true;
+                document.getElementById('Preco').readOnly = true;
+                document.getElementById('Tamanhopizza').disabled = true; 
+                document.getElementById('Disponivel').disabled= true; 
+                document.getElementById('btn').disabled = true; 
+            }
+        }
+    
+        function verificarpizza() {  // Aqui está uma regra de negócio
+            var preco = formulario.Preco.value;
+            if(preco <= 0.0) {
+                alert('Eita. Ocorreu um probleminha aqui. Se acalme que vamos resolver isso. Esta acontecendo o seguinte - O preco não pode ser 0. Verifique os campos e tente novamente')
+                formulario.Preco.focus();
+                return false;
+            }
+        }
+
+    </script>
+        <div>
+            <a href="menu.html"><i class="material-icons"></i></a>
+            Voltar Para o Menu
+        </div>
+        <form class="formulario" name="formulario" action=""> <!--Esse é o meu form onde vai estar todos os elementos do meu formulário-->
+            <div class="p1"> <!--Essa classe serve para estilizar o meu formulário-->
+                <div class="p1-topo"> <!--Nessa classe é aonde vais estar todos os elementos da parte de cima do formulário que estilizada no meu css-->
+                    <img class="icone" src="logo pizzaria xtale 3.jpeg" alt="Essa imagem é o logo da pizzaria">
+                    <h2 class="titulo">Alterar Pizza</h2>
+                    <br>
+                    <span>
+                        <!--Aqui é onde vai estar a mensagem de erro e de concluido-->
+                    </span>
+                </div>
+                <br>
+                <div class="p2-grupo">
+                    <label>Idpizza</label>
+                    <input type="text" name="Idpizza" id="Idpizza" value = "" readonly>
+                </div>
+                <div class="p2-grupo">
+                    <label>Nome</label>
+                    <input type="text" name="Nome" id="Nome" placeholder="Digite o nome da pizza"  maxlength="40" value = "" pattern = "^([a-zA-Zà-úÀ-Ú0-9]|\s)+$" title = "Digite o nome da pizza com letras ou números" required autofocus>
+                </div>
+                <div class="p2-grupo">
+                    <label>Tamanho</label>
+                    <select name="Tamanhopizza" id="Tamanhopizza">
+                        <option></option>
+                        <option disabled>-------</option>
+                        <option value="Grande">Grande</option>
+                        <option value="Médio">Médio</option>
+                        <option value= "Pequeno">Pequeno</option>
+                    </select>
+                </div>
+                <div class="p2-grupo">
+                    <labelDisponível</label>
+                    <select name ="Disponivel" id ="Disponivel">
+                        <option></option>
+                        <option disabled>------</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Nao">Não</option>
+                    </select>
+                </div>
+                <div class="p2-grupo">
+                    <button class="btn" id="btn" type="submit" onclick="return verificarpizza()">ALTERAR</button> <!--O submit serve para indicar que esse botão vai ter a ação de fazer o envio dos dados do formulário-->
+                </div>
+            </div> <!--Essa div fecha a div class p1-->
+        </form>
+        <h1 class="h1">Listar Pizza</h1>
+        <table id="customers">
+            <tr>
+                <th class="th"><b>Idpizza</th>
+                <th class="th"><b>Nome</th>
+                <th class="th"><b>Preço</th>
+                <th class="th"><b>Disponível</th>
+                <th class="th"><b>Tamanho</th>
+            </tr>
+            <tr>
+                <td class="td">TEXTO1</b></td>
+                <td class="td">TEXTO2</b></td>
+                <td class="td">TEXTO3</b></td>
+                <td class="td">TEXTO4</b></td>
+                <td class="td">TEXTO5</b></td>
+                <td><a class ="botao" href ="">ALTERAR</a></td>
+                <td><a class = "botao" href="">EXCLUIR</a></td>
+            </tr>
+        </table>
+</script>
+</body>
+</html>

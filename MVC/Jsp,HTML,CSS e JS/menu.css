@@ -1,0 +1,72 @@
+* { /*Aqui está a formatação principal que é para setar os valores padrões da página*/
+    padding: 0px;
+    margin: 0px;
+}
+
+body { /*Aqui está a formatação do meu body da página */
+    font-family: 'Quicksand', sans-serif;
+    background-size: 100%;
+    background-image: url(Imagens/telafundo.jpg);
+    background-image:  fixed;
+}
+
+nav { /* Aqui fica a formatação do nav onde vai estar todas as opções do menu */
+    background-color: black;
+    height: 50px; /* Aqui eu coloquei uma altura de 50px */
+}
+
+#ul-p { /* Aqui está a formatação do ul-principal para ajustar*/
+    width: 90%; /*Aqui eu coloquei uma largura de 90%*/
+    margin: auto; /*Aqui usei um margin pois essa funçãp serve para agustar a área que eu quero nos elementos */
+}
+
+
+ul { /* Aqui está a formatação do meu ul para tirar o formatação padrão dele */
+    list-style: none;
+}
+
+a { /*formatação do link "a"*/
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block; /*todo link vem por padrão com display inline ou seja ele não preenche todo o espaço*/ /*E como eu quero que preencha eu usei o display block*/
+    padding: 0px 20px; /*Aqui usei um padding de 0px emcima e embaixo porque ja estamos com 50px e não precisa mexer e coloquei 20px na esquerda e na direita para dar uma separada*/
+}
+
+a:hover { /*Aqui coloquei um efeito quando passar o mouse por cima do link*/
+    background-color: yellow;
+    color: black;
+    transition: 1s;
+}
+
+
+.li-p { /* Aqui eu estou formatando o alinhamento dos elementos do meu menu no nav e entre eles */
+    line-height: 50px; /*Aqui eu coloquei a altura da linha de 50px que é a mesma altura do nav dessa forma a palavra vai ficar centralizada */
+    float: left; 
+}
+
+ul { /*Aqui estou estilizando o meu submenu no caso eu coloquei um background color black */
+    background-color: black;
+}
+
+.h1 { /* Aqui está a formatação do título da minha página */
+    color: black;
+    text-align: center;
+    padding: 250px;
+}
+
+.ul-cadastrar, .ul-editar, .ul-relatorio { /*Aqui irei formatar os submenus*/
+    display: none; /*Aqui usei um display none para desaparecer os submenus*/
+}
+
+.footer { /* Aqui está a formatação do meu footer o rodape da minha página */
+    text-align: center;
+    background-size: 100%;
+    padding: 15%;
+    background-image:url(Imagens/pizza-amor-epizza.jpg); /* Esse background image é a imagem que eu coloquei no rodapé */
+}
+
+.botao { /*Aqui está a formatação dos botões do meu footer */
+    padding: 20px;
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!--Estrutura Básica Html-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!--Lá no Eclipse o meta está como "Iso-8859-2"-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="shortcut icon" href="fatia-de-pizza.png"> <!--Icone da página-->
+    <link rel="Stylesheet" href="alterar.css"> <!--Declaração do meu CSS-->
+    <title>Alterar Produto</title>
+</head>
+<body onload = "campos()">
+<script type="text/javascript">
+    function campos() {
+        var Idproduto= formulario.Idproduto.value;
+        if(Idproduto == "null") {
+            document.getElementById('Idproduto').readOnly =  true;
+            document.getElementById('Idproduto').value=''; 
+            document.getElementById('Nome').value=''; 
+            document.getElementById('Preco').value=''; 
+            document.getElementById('Categoria').value=''; 
+            document.getElementById('Estoque').value=''; 
+            document.getElementById('Nome').readOnly = true;
+            document.getElementById('Preco').readOnly = true;
+            document.getElementById('Categoria').readOnly = true
+            document.getElementById('Estoque').readOnly= true; 
+            document.getElementById('btn').disabled = true; 
+            document.getElementById('btn2').disabled = true;  
+        }
+    }
+
+    function somar() {
+        var n1 = parseInt(document.getElementById('Estoque').value);
+        var n2 = parseInt(document.getElementById('Numero2').value);
+        var total = n1 + n2;
+        document.getElementById('Estoque').value = total;
+    }
+
+    function diminuir() {
+        var n1 = parseInt(document.getElementById('Estoque').value);
+        var n2 = parseInt(document.getElementById('Numero2').value);
+        var total = n1 - n2;
+        document.getElementById('Estoque').value = total;
+    }
+
+</script>
+<div>
+    <a href="menu.html"><i class="material-icons"></i></a>
+    Voltar Para o Menu
+</div>
+<form class="formulario" name="formulario" action=""> <!--Esse é o meu form onde vai estar todos os elementos do meu formulário-->
+    <div class="p1"> <!--Essa classe serve para estilizar o meu formulário-->
+        <div class="p1-topo"> <!--Nessa classe é aonde vais estar todos os elementos da parte de cima do formulário que estilizada no meu css-->
+            <img class="icone" src="logo pizzaria xtale 3.jpeg" alt="Essa imagem é o logo da pizzaria">
+            <h2 class="titulo">Alterar Produto</h2>
+            <br>
+            <span>
+                <!--Aqui é onde vai estar a mensagem de erro e de concluido-->
+            </span>
+        </div>
+        <br>
+        <div class="p2-grupo"> <!--Aqui eu usei uma div para cada label, input e botão -->
+            <label>Idproduto</label>
+            <input type="text" name="Idproduto" id="Idproduto" value="" readonly>
+        </div>
+        <div class="p2-grupo"> <!--Aqui eu usei uma div para cada label, input e botão -->
+            <label>Nome</label>
+            <input type="text" name="Nome" id = "Nome" placeholder="Digite o nome do produto" maxlength="40" pattern="^([a-zA-Zà-úÀ-Ú0-9]|\s)+$" value="" title="Digite o nome com apenas letras" required autofocus>
+        </div>
+        <div class="p2-grupo"> <!--Aqui eu usei uma div para cada label, input e botão -->
+            <label>Preço</label>
+            <input type="text" name="Preco" id = "Preco" value="" placeholder="Digite o preço do produto" maxlength="8" pattern="[0-9]+([\.][0-9]+)" title="Digite o preço com um número com um ponto, exemplo: 5.0" required >
+        </div>
+        <div class="p2-grupo"> <!--Aqui eu usei uma div para cada label, input e botão -->
+            <label>Categoria</label>
+            <input type="text" name="Categoria" id="Categoria" placeholder="Digite a categoria do produto" value="" pattern="[0-9]+$" title="Digite o id da categoria" required>
+        </div>
+        <div class="p2-grupo"> <!--Aqui eu usei uma div para cada label, input e botão -->
+            <label>Estoque</label>
+            <input type="text" name="Estoque" id="Estoque" placeholder="Digite a quantidade do produto" pattern="[0-9]+$" value="" title="Digite o numero do estoque que deve ser igual ou maior que 1 e sem ponto" required autofocus>
+        </div>
+        <div class="p2-grupo"> <!--Aqui eu usei uma div para cada label, input e botão -->
+            <button class="btn" id = "btn" type="submit" formaction="editarproduto" onclick=" return verificarpreco()">ALTERAR</button> <!--O submit serve para indicar que esse botão vai ter a ação de fazer o envio dos dados do formulário-->
+        </div>
+        <div class="p2-grupo"> <!--Aqui eu usei uma div para cada label, input e botão -->
+            <button class="btn" type="submit" formaction = "listarproduto">VOLTAR PARA A TABELA</button>
+        </div>
+    </div> <!--Essa div fecha a div class p1-->
+    </form>
+        <div class="estoque">
+            <label>Estoque</label>
+            <input type="text" name="Numero2" id="Numero2" placeholder="Digite a quantidade do produto" required autofocus>
+            <button class="btn2" id="btn2" type="submit" onclick = "somar()">ADICIONAR</button><button class="btn2" id = "btn2" type="submit" onclick = "diminuir()">DIMINUIR</button><!--O submit serve para indicar que esse botão vai ter a ação de fazer o envio dos dados do formulário-->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+* { /*Aqui está a formatação principal que é para setar os valores padrões da página*/
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-size: 100%;
+    background-image: url(Imagens/telafundo.jpg);
+    background-image:  fixed;
+}
+
+.h1 {
+    color: black;
+    text-align: center;
+    padding: 60px;
+}
+
+.pizzas { /* Aqui está a formatação da lista com o nome das pizzas */
+    padding: 100px;
+    height: 50%;
+}
+
+ul { /* Aqui está a formatação do meu ul para tirar o formatação padrão dele */
+    list-style: none;
+}
+
+a { /*formatação do link "a"*/
+    text-decoration: none;
+    color: white;
+    display: block; /*todo link vem por padrão com display inline ou seja ele não preenche todo o espaço*/ /*E como eu quero que preencha eu usei o display block*/
+    padding: 0px 20px; /*Aqui usei um padding de 0px emcima e embaixo porque ja estamos com 50px e não precisa mexer e coloquei 20px na esquerda e na direita para dar uma separada*/
+}
+
+nav { /* Aqui fica a formatação do nav onde vai estar todas as opções do menu */
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+}
+
+#ul-p { /* Aqui está a formatação do ul-principal para ajustar*/
+    width: 90%; /*Aqui eu coloquei uma largura de 90%*/
+    margin: auto;
+}
+
+.li-p {
+    line-height: 100px; /*Aqui eu coloquei a altura da linha de 50px que é a mesma altura do nav dessa forma a palavra vai ficar centralizada verticalmente*/
+    float: left; /*flutuar para a esquerda para ficar um do lado do outro*/
+}
+
+.li-p2 {
+    line-height: 100px; /*Aqui eu coloquei a altura da linha de 50px que é a mesma altura do nav dessa forma a palavra vai ficar centralizada verticalmente*/
+}
+
+.li-p2:hover {
+    background-color: yellow;
+    color: black;
+    transition: 1s;
+}
+
+.p { /* Aqui está a formatação do texto embaixo do título */
+    text-align: center;
+}
+
+.p2 { /* Esse p2 é a formatação do paragrafo de informações */
+    padding: 50px;
+    text-align: center;
+}
+
+.footer { /* Aqui está a formatação do footer rodapé da página */
+    color: white;
+    background-color: black;
+    padding: 100px;
+}
+ .icone {
+    width: 120px;
+    height: 100px;
+ }

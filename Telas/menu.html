@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!--Lá no Eclipse o meta está como "Iso-8859-2"-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="fatia-de-pizza.png"> <!--Esse é o icone da página-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><!--Esse link é de um efeito que eu utilizei no menu-->
+    <script type="text/javascript" src="menu.js"></script> <!--Aqui eu linkei o meu javascript-->
+    <link rel="Stylesheet" href="menu.css"> <!--Aqui eu linkei o meu css-->
+    <title>Menu</title>
+</head>
+<body>
+    <nav> <!--Aqui está o meu nav onde vai estar todos os elementos do meu menu e submenu-->
+        <ul id="ul-p"> <!--Aqui está o ul principal da minha página mais conhecida como lista desordenada-->
+            <li class="li-p"> <!--Aqui esta a li-principal da opção CADASTRAR-->
+                <a href="javascript://" class="bt1">CADASTRAR</a>
+                <ul class="ul-cadastrar">
+                    <li><a href="">BORDA</li>
+                    <li><a href="">PRODUTO</li>
+                    <li><a href="">PIZZA</li>
+                    <li><a href="">INGREDIENTE</li>
+                    <li><a href="">CATEGORIA</li>
+                </ul>
+            </li>
+            <li class="li-p"> <!--Aqui esta a li-principal da opção EDITAR-->
+                <a href="javascript://" class="bt2">EDITAR</a>
+                <ul class="ul-editar">
+                    <li><a href="">BORDA</a></li>
+                    <li><a href="">PRODUTO</a></li>
+                    <li><a href="">PIZZA</a></li>
+                    <li><a href="">INGREDIENTE</a></li>
+                    <li><a href="">CATEGORIA</a></li>
+                </ul>
+            </li>
+            <li class="li-p"> <!--Aqui esta a li-principal da opção RELATÓRIO-->
+                <a href="javascript://" class="bt3">RELATÓRIO</a>
+                <ul class="ul-relatorio">
+                    <li><a href="">PRODUTO</a></li>
+                    <li><a href="">INGREDIENTE</a></li>
+                </ul>
+            </li>
+            <li style="float:right"><a class="li-p" href="">MEUS DADOS</a></li> <!--Aqui eu usei um float:right para a opção meus dados flutuar para a direita no meu nav--> <!--Aqui esta a li-principal da opção MEUS DADOS-->
+        </ul>
+    </nav>
+    <h1 class="h1">Pizzaria Xtale</h1> <!--Aqui está o título da página-->
+    <footer class="footer"> <!--Aqui está o rodapé da página-->
+        <button><a class="botao" href = "paginalterarpizza">Alterar pizza</button></a> <!--Aqui está os botões de atalho da página-->
+        <button><a class="botao" href ="listarproduto">Alterar produto</button></a> <!--Aqui está os botões de atalho da página-->
+        <button><a class="botao" href = "listaringredientes">Alterar ingrediente</button></a> <!--Aqui está os botões de atalho da página-->
+    </footer>
+</body>
+</html>
